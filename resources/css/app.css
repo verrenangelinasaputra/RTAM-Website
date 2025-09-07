@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'OneUI-SansGUI-300';
+    src: url('/public/fonts/ONEUISANSGUI-300LIGHT.TTF');
+}
+
+@font-face {
+    font-family: 'OneUI-SansGUI-400';
+    src: url('/public/fonts/ONEUISANSGUI-400REGULAR.TTF');
+}
+
+@font-face {
+    font-family: 'OneUI-SansGUI-600';
+    src: url('/public/fonts/ONEUISANSGUI-600SEMIBOLD.TTF');
+}
+
+@font-face {
+    font-family: 'OneUI-SansGUI-700';
+    src: url('/public/fonts/ONEUISANSGUI-700BOLD.TTF');
+}
+
+@font-face {
+    font-family: 'SamsungSharpSans-Bold';
+    src: url('/public/fonts/SAMSUNGSHARPSANS-BOLD.TTF');
+}
+
+@font-face {
+    font-family: 'SamsungSharpSans-Medium';
+    src: url('/public/fonts/SAMSUNGSHARPSANS-MEDIUM.TTF');
+}
+
+@font-face {
+    font-family: 'SamsungSharpSans-Regular';
+    src: url('/public/fonts/SAMSUNGSHARPSANS-REGULAR.TTF');
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.nav-link {
+    position: relative;
+    border-bottom: 2px solid transparent;
+}
+
+    .nav-link.active {
+        color: #2563eb; /* Tailwind blue-600 */
+        /* text-decoration: underline;
+        text-decoration-color: #2563eb;
+        text-underline-offset: 4px; */
+    }
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -21px;
+    /* sesuaikan jarak underline */
+    height: 2px;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+.nav-link.active::after {
+    transform: scaleX(1);
+    /* langsung tampil */
+    background-color: #0073e6;
+    /* ganti dengan warna biru kamu, contoh: samsungBlue */
+}
