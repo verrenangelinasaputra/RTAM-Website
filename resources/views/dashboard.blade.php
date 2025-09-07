@@ -1145,7 +1145,7 @@ $store.globalToast.openToast = true;
                 </div>
 
                 <!-- Speaker Info -->
-                <p class="mt-3 text-center text-black font-oneui400 text-sm sm:text-xl xl:text-2xl font-bold">Mary Jane
+                <p class="mt-3 text-center text-black font-oneui400 text-sm sm:text-xl xl:text-2xl font-bold">Mary H Jane
                 </p>
                 <p class="text-center text-gray-600 font-oneui400 text-xs sm:text-lg xl:text-xl">SRIN/B2B Innovation P
                 </p>
